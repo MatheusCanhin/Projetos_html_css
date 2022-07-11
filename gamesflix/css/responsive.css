@@ -1,0 +1,36 @@
+
+
+@media screen and (max-width:926px) {
+    header{
+        display: flex;
+        flex-direction:column;
+    }  
+}
+
+@media screen and (max-width:738px) {
+    header{
+        display: flex;
+        flex-direction:column;
+    }  
+
+    div .menu{
+        display: flex;
+        flex-direction:row;
+    }
+
+    .menu-left{
+        display: flex;
+        flex-direction:row;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .menu-right, .social, .info, .autor{
+        display: none;
+    }
+}
+
+@media screen and (max-width:420px){
+    .menu-left{
+        display: none;
+    }
+}

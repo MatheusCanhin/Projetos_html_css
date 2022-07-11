@@ -1,0 +1,220 @@
+
+/* Base*/
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+
+}
+body{
+    background: var(--preto);
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+
+
+/* Configurando os Menu*/
+.logo{
+    align-self: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+i{
+    padding-bottom: 15px;
+    margin-right: 10px;
+}
+
+/*Configuração Menu*/
+div .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+div .menu-left a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    font-size: 16px;
+    align-self: center;
+    position: relative;
+}
+
+
+div .menu-right a{
+    margin-left: 10px;
+    margin-right: -5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative; 
+    font-size: 16px;
+}
+
+div .user{
+    height: 20px;
+    margin-left: px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+div a:hover{
+    color: var(--vermelho);
+
+    cursor: pointer;
+    transition: 2s ease all;
+}
+
+.search-box{
+    border-radius:100%;
+}
+
+.searchtxt{
+    background: none;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    color:white;
+    width: 0px;
+    transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Configuração Botão de pesquisa*/
+.search-box:hover > .searchtxt{
+    width: 150px;
+    background: rgb(77, 77, 77);
+}
+
+
+
+
+/* Configuração Relacionadas ao jogo principal*/
+main{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(../img/farcry.jpg);
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:initial;
+    padding-left: 20px;
+    position: flex;
+}
+
+div .titulo{
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: yellow;
+    position: flex;
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+/*Configurando Botões*/
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 3px 25px;
+    margin-right: 1px;
+    margin-top: 5px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+button i{
+    margin-right: 10px;
+    margin-left: -5px;
+    margin-top: 13px;
+}
+
+/*configurando o titulo da section*/
+h3{
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    align-self: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ .fa-angle-right{
+    font-size: 10px;
+ }
+
+/*configurando efeito de cada jogo*/
+.box-jogo{
+   -webkit-filter: brightness(80%);
+
+   cursor: pointer;
+}
+
+.box-jogo:hover{
+    -webkit-filter: brightness(150%);
+    transition: .3s ease all;
+}
+
+
+/*mudanças no botão carrosse*/
+.owl-dot{
+   width: 15px;
+   height: 0px ;
+   position: relative;
+}
+
+/*Organizando o Footer*/
+.social{
+    padding-top: 200px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.rodapé{
+    color: #808080;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+.dados{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+p{
+    font-size: 20px;
+    padding: 10px;
+}
